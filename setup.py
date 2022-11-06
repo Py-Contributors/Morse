@@ -14,18 +14,14 @@ setuptools.setup(
     url="https://github.com/codePerfectPlus/morse",
     keywords="audiobook",
     packages=setuptools.find_packages(),
-    project_urls= {
-        "Documentation": "https://pycontributors.readthedocs.io/projects/morse/en/latest/",
-        "Source": "https://github.com/Py-Contributors/morse",
-        "Tracker": "https://github.com/Py-Contributors/morse/issues"
-    },
-    classifiers=[
-        "Development Status :: 2 - Pre-Alpha",
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Intended Audience :: Developers",
-    ],
+    project_urls={"Documentation": "https://pycontributors.readthedocs.io/projects/morse/en/latest/",
+                  "Source": "https://github.com/Py-Contributors/morse",
+                  "Tracker": "https://github.com/Py-Contributors/morse/issues"},
+    classifiers=["Development Status :: 2 - Pre-Alpha",
+                 "Programming Language :: Python :: 3",
+                 "License :: OSI Approved :: MIT License",
+                 "Operating System :: OS Independent",
+                 "Intended Audience :: Developers"],
     python_requires=">=3.4",
     entry_points={
         "console_scripts": ["morse = morse.cli:main"],
