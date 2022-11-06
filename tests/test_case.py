@@ -1,5 +1,7 @@
+import sys
 import unittest
 
+sys.path.append('.')
 from morse.main import Morse
 
 class MorseTest(unittest.TestCase):
