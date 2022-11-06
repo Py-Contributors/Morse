@@ -1,5 +1,6 @@
 # Morse
 
+The project name is still in progress. Please suggest a name. Check out the [issues](https://github.com/Py-Contributors/Morse/issues/3)
 Python CLI/Library tool for morse code
 
 ## Installation
