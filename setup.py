@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setuptools.setup(
     name="Morse",
     version="1.0.0",
@@ -11,6 +14,7 @@ setuptools.setup(
     description="A package to convert text to morse code and vice versa",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    install_requires=required,
     url="https://github.com/codePerfectPlus/morse",
     keywords="audiobook",
     packages=setuptools.find_packages(),
