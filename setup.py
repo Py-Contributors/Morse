@@ -7,14 +7,14 @@ with open("README.md", "r") as fh:
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 
-__name__ = "Morse"
+__name__ = "morseify"
 __version__ = "1.0.0"
 __author__ = "Deepak Raj"
 __author_email__ = "deepak008@live.com"
 __description__ = "A package to convert text to morse code and vice versa"
 __documentation__ = "https://pycontributors.readthedocs.io/projects/morse/en/latest/"
-__source__ = "https://github.com/Py-Contributors/morse"
-__tracker__ = "https://github.com/Py-Contributors/morse/issues"
+__source__ = "https://github.com/codeperfectplus/morseit"
+__tracker__ = "https://github.com/codeperfectplus/morseit/issues"
 
 setuptools.setup(
     name=__name__,
@@ -26,7 +26,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     data_files=[('assets', glob('morse/assets/*'))], 
     include_package_data=True,
-    url="https://github.com/codePerfectPlus/morse",
+    url="https://github.com/codePerfectPlus/morseit",
     keywords="morse code, text to morse, morse to text",
     packages=setuptools.find_packages(),
     project_urls={"Documentation": __documentation__,
