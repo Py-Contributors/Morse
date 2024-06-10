@@ -2,8 +2,8 @@ import sys
 import unittest
 
 sys.path.append('.')
-from morse.main import Morse
-m = Morse()
+from morseify.main import Morseify
+m = Morseify()
 
 
 class MorseTest(unittest.TestCase):

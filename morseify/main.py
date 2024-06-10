@@ -1,8 +1,8 @@
-from morse.utils import load_config
+from morseify.utils import load_config
 morse_mapping_json = load_config('morse_mapping.json')
 
 
-class Morse(object):
+class Morseify(object):
     def __init__(self):
         self.character_mapping = {**morse_mapping_json['morse_mapping'], **{k.lower(): v for k, v in \
                                 morse_mapping_json['morse_mapping'].items()}}

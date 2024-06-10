@@ -14,9 +14,9 @@ if not any([args.text, args.morse, args.binary]):
     parser.print_help()
     sys.exit(1)
 
-from morse.main import Morse
+from morseify.main import Morseify
 
-m = Morse()
+m = Morseify()
 
 
 def main():
