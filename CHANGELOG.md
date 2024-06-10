@@ -4,4 +4,5 @@ All notable changes to this project will be documented in this file. The format 
 
 ## First Release 
 
--  initial features release with encoding and decoding
+- Initial features release with encoding and decoding
+- CLI support for encoding and decoding

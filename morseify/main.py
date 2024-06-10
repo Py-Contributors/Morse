@@ -44,5 +44,15 @@ class Morseify(object):
         return ''.join([self.reverse_character_mapping[char].lower() if char in self.reverse_character_mapping \
                         else char for char in morse_code.split()])
 
+    def encode_file(self, file_path, save=False):
+        with open(file_path, 'r') as file:
+            encoded_value = self.encode_morse(file.read())
+        if save:
+            encoded_file_path = file_path.replace('.', '.encode')
+            with open(encoded_file_path, 'w') as file:
+                file.write(encoded_value)
+                return encoded_file_path
+        return encoded_value    
+
     def __version__(self):
         return '1.0.0'

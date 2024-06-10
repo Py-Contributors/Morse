@@ -6,13 +6,13 @@ Python CLI/Library tool for morse code
 ## Installation
 
 ```bash
-pip install <releasing soon>
+pip install morseify
 ```
 
 ## Usage
 
 ```bash
-morse --help
+morseify --help
 ```
 
 ## License

@@ -39,6 +39,6 @@ setuptools.setup(
                  "Intended Audience :: Developers"],
     python_requires=">=3.4",
     entry_points={
-        "console_scripts": ["morse = morse.cli:main"],
+        "console_scripts": ["morseify = morseify.cli:main"],
     },
 )
