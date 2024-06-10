@@ -1,5 +1,3 @@
-# Entry point for the morse command line interface
-
 import sys
 import argparse
 
@@ -15,9 +13,7 @@ if not any([args.text, args.morse, args.binary]):
     sys.exit(1)
 
 from morseify.main import Morseify
-
 m = Morseify()
-
 
 def main():
     if args.text:
@@ -26,6 +22,8 @@ def main():
         print(m.decode_morse(args.morse))
     elif args.binary:
         print(m.binary_to_morse(args.binary))
+    elif args.version:
+        print(m.__version__())
 
 
 if __name__ == '__main__':
